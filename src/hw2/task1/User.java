@@ -1,5 +1,7 @@
 package hw2.task1;
 
+import java.util.Objects;
+
 public class User {
 
            private int id;
