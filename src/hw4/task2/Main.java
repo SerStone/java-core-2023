@@ -45,8 +45,15 @@ public class Main {
                 new Car("toyota", 2023, 323));
         user10.getSkills().add(new Skill("js",8));
 
-        HashSet<User> users = new HashSet<>();
+//        HashSet<User> users = new HashSet<>();
 
+
+
+//       users.removeIf(user -> user.getGender() == Gender.MALE);
+//        System.out.println(users);
+
+
+        TreeSet<User> users = new TreeSet<>();
         users.add(user1);
         users.add(user2);
         users.add(user3);
@@ -58,15 +65,8 @@ public class Main {
         users.add(user9);
         users.add(user10);
 
-
-//       users.removeIf(user -> user.getGender() == Gender.MALE);
-//        System.out.println(users);
-
-
-        TreeSet<User> sortedUsers = new TreeSet<>(Comparator.comparingInt(user -> user.getSkills().size()));
-
-        sortedUsers.addAll(users);
-        System.out.println(sortedUsers);
+//        sortedUsers.addAll(users);
+        System.out.println(users);
     }
 
 }
